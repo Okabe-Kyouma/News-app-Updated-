@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+   <com.google.android.material.appbar.MaterialToolbar
+       android:id="@+id/my_toolbar"
+       android:layout_width="match_parent"
+       android:layout_height="?attr/actionBarSize"
+       android:background="@color/purple_200"
+       android:elevation="4dp"
+       app:title="News"
+       app:menu="@menu/menu"
+       app:titleTextColor="@color/black"
+       app:titleMargin="8dp"
+       app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+
+   </com.google.android.material.appbar.MaterialToolbar>
+
+   <HorizontalScrollView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_margin="8dp"
+       android:background="@color/white"
+       >
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:orientation="horizontal"
+          android:layout_margin="4dp"
+          android:background="@color/white"
+          android:layout_height="wrap_content">
+
+      <Button
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+         android:id="@+id/button1"
+          android:backgroundTint="@color/purple_200"
+          android:padding="6dp"
+          android:textColor="@color/white"
+          android:text="business"
+          android:layout_margin="6dp">
+
+      </Button>
+         <Button
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:id="@+id/button2"
+             android:textColor="@color/white"
+             android:backgroundTint="@color/purple_200"
+             android:padding="6dp"
+             android:text="entertainment"
+             android:layout_margin="6dp">
+
+         </Button>
+         <Button
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:textColor="@color/white"
+             android:id="@+id/button3"
+             android:backgroundTint="@color/purple_200"
+             android:padding="6dp"
+             android:text="general"
+             android:layout_margin="6dp">
+
+         </Button>
+         <Button
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:textColor="@color/white"
+             android:id="@+id/button4"
+             android:backgroundTint="@color/purple_200"
+             android:padding="6dp"
+             android:text="health"
+             android:layout_margin="6dp">
+
+         </Button>
+         <Button
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:textColor="@color/white"
+             android:backgroundTint="@color/purple_200"
+             android:id="@+id/button5"
+             android:padding="6dp"
+             android:text="science"
+             android:layout_margin="6dp">
+
+         </Button>
+         <Button
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:textColor="@color/white"
+             android:backgroundTint="@color/purple_200"
+             android:id="@+id/button6"
+             android:padding="6dp"
+             android:text="sports"
+             android:layout_margin="6dp">
+
+         </Button>
+         <Button
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:textColor="@color/white"
+             android:backgroundTint="@color/purple_200"
+             android:id="@+id/button7"
+             android:padding="6dp"
+             android:text="technology"
+             android:layout_margin="6dp">
+
+         </Button>
+
+      </LinearLayout>
+
+   </HorizontalScrollView>
+
+
+   <androidx.recyclerview.widget.RecyclerView
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:elevation="8dp"
+       android:id="@+id/recycle_view"
+      android:layout_margin="8dp"
+     >
+
+   </androidx.recyclerview.widget.RecyclerView>
+
+
+</LinearLayout>

@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">NewsApp</string>
+    <string name="api_key">185ff8c362174d8b82a8bcbc6468f816</string>
+    <string-array name="country_codes">
+        <item>India(in)</item>
+        <item>USA(us)</item>
+        <item>UAE(ae)</item>
+        <item>Australia(au)</item>
+        <item>Japan(jp)</item>
+        <item>Russia(ru)</item>
+        <item>China(cn)</item>
+        <item>England(gb)</item>
+
+    </string-array>
+</resources>
